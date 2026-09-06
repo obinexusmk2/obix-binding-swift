@@ -18,7 +18,6 @@ export function createSchemaResolver(config) {
             return mode;
         },
         destroy() {
-            // Stateless
         },
     };
 }

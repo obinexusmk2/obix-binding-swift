@@ -1,6 +1,6 @@
 {
   "name": "@obinexusltd/obix-binding-swift",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "OBIX Swift Binding - iOS/macOS native rendering bridge",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,8 +10,16 @@
     "test": "vitest run"
   },
   "files": [
-    "dist"
+    "dist",
+    "src",
+    "docs",
+    "__tests__"
   ],
+  "directories": {
+    "lib": "dist",
+    "doc": "docs",
+    "test": "__tests__"
+  },
   "exports": {
     ".": {
       "import": "./dist/index.js",
@@ -22,5 +30,8 @@
   "author": "OBINexus <okpalan@protonmail.com>",
   "publishConfig": {
     "access": "public"
+  },
+  "devDependencies": {
+    "typescript": "~5.4.0"
   }
 }

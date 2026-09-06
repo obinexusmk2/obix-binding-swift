@@ -1,9 +1,3 @@
-/**
- * OBIX Swift Binding
- * iOS/macOS native rendering bridge
- * Connects libpolycall FFI/polyglot bridge to Swift runtime
- */
-// ── Sub-module factory re-exports ─────────────────────────────────────────────
 export { createFFITransport, normalizeFunctionIdentifier } from './ffi-transport.js';
 export { createARCTracker } from './arc-tracker.js';
 export { createDispatchQueue } from './dispatch-queue.js';
@@ -14,12 +8,6 @@ import { createARCTracker } from './arc-tracker.js';
 import { createDispatchQueue } from './dispatch-queue.js';
 import { createCombineStreamManager } from './combine-stream.js';
 import { createSchemaResolver } from './schema-resolver.js';
-// ── Main factory ──────────────────────────────────────────────────────────────
-/**
- * Create a Swift binding to libpolycall
- * @param config Configuration for the binding
- * @returns Bridge for invoking polyglot functions and managing Swift runtime state
- */
 export function createSwiftBinding(config) {
     let initialized = false;
     const ABI_BINDING_NAME = 'swift';
@@ -88,10 +76,8 @@ export function createSwiftBinding(config) {
             return dispatchQueue.getStats();
         },
         async renderView(_viewDescriptor) {
-            // Stub — future native bridge integration
         },
         async handleUIEvent(_eventType, _eventData) {
-            // Stub — future native bridge integration
             return undefined;
         },
         get ffiTransport() { return ffiTransport; },

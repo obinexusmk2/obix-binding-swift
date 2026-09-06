@@ -43,7 +43,6 @@ export function createFFITransport(config) {
             }
         },
         destroy() {
-            // Stateless — nothing to clean up
         },
     };
 }

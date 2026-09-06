@@ -38,7 +38,6 @@ export function createDispatchQueue(transport, config) {
             }
             return new Promise((resolve, reject) => {
                 queue.push({ taskId, fn, args, priority, resolve, reject });
-                // Stable sort by priority weight (lower = higher priority)
                 queue.sort((a, b) => PRIORITY_WEIGHT[a.priority] - PRIORITY_WEIGHT[b.priority]);
                 drainQueue();
             });

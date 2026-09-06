@@ -1,6 +1,3 @@
-/**
- * OBIX Swift Binding — shared types
- */
 export type SchemaMode = 'monoglot' | 'polyglot' | 'hybrid';
 export interface InvocationEnvelope {
     functionId: string;

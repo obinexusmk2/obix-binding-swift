@@ -59,6 +59,22 @@ npm test
 npm run build
 ```
 
+## Documentation
+
+In-depth guides live in [`docs/`](docs/):
+
+| # | Guide |
+|---|-------|
+| 01 | [Overview](docs/01-overview.md) |
+| 02 | [Installation and Setup](docs/02-installation-and-setup.md) |
+| 03 | [Binding Lifecycle and Configuration](docs/03-binding-lifecycle.md) |
+| 04 | [FFI Transport and the ABI Boundary](docs/04-ffi-transport-and-abi.md) |
+| 05 | [Schema Modes](docs/05-schema-modes.md) |
+| 06 | [Runtime Features](docs/06-runtime-features.md) |
+| 07 | [Best Practices](docs/07-best-practices.md) |
+
+---
+
 ## License
 
 MIT.

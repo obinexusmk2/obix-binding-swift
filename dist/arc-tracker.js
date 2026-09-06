@@ -37,7 +37,6 @@ export function createARCTracker(config = {}) {
         popAutoreleasePool() {
             if (autoreleasePoolDepth > 0) {
                 autoreleasePoolDepth--;
-                // Simulate draining: release ~20% of live objects
                 const drainCount = Math.floor(liveObjectCount() * 0.2);
                 releaseCount += drainCount;
             }
